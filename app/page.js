@@ -1,9 +1,14 @@
 import Header from "@/components/headers/Header";
+import Swiper from "@/components/swiper/Swiper";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Header />
-    </div>
+
+      <main>
+        <Swiper />
+      </main>
+    </>
   );
 }
