@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header
-      className="container grid grid-cols-[auto_auto_auto] items-center gap-12 w-fit"
+      className="container grid grid-cols-[auto_auto_auto] items-end justify-between mt-4"
       style={{
         marginInline: "auto",
         paddingBlock: "0.5rem",

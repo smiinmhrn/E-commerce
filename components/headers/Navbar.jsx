@@ -1,9 +1,10 @@
 import Link from "next/link";
+import Input from "./Input";
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul className="flex items-center gap-3 ">
+    <nav className="flex flex-col gap-8">
+      <ul className="flex items-end gap-3 ">
         <li>
           <Link
             href="/"
@@ -49,6 +50,8 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+
+      <Input />
     </nav>
   );
 };
