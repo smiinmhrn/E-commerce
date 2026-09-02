@@ -10,13 +10,7 @@ const Header = () => {
   const [logoHover, setLogoHover] = useState(0);
 
   return (
-    <header
-      className="container grid grid-cols-[auto_auto_auto] items-end justify-between mt-4"
-      style={{
-        marginInline: "auto",
-        paddingBlock: "0.5rem",
-      }}
-    >
+    <header className="mx-auto py-2 container grid grid-cols-[auto_auto_auto] items-end justify-between mt-4">
       {/* Logo + Social */}
       <div
         className="relative w-fit"

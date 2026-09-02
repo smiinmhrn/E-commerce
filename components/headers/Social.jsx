@@ -16,16 +16,7 @@ const Social = ({ logoHover }) => {
     <div
       onMouseEnter={() => setHover(1)}
       onMouseLeave={() => setHover(0)}
-      className={`
-        flex
-        justify-around
-        items-center
-        absolute
-        left-0
-        right-0
-        z-20
-        transition-all
-        duration-500
+      className={`flex justify-around items-center absolute left-0 right-0 z-20 transition-all duration-500
         ${isVisible ? "top-full" : "top-[70%]"}
       `}
       style={{

@@ -29,11 +29,11 @@ const SliderFour = () => {
           <SwiperSlide>
             <div className=" flex items-center justify-center">
               <Image
-                src={"/slider/slide1.jpg"}
-                className="rounded-lg object-cover"
+                src="/slider/slide1.jpg"
                 width={1320}
                 height={310}
                 alt="slides"
+                className="w-full h-auto rounded-lg object-cover"
               />
             </div>
           </SwiperSlide>
@@ -41,11 +41,11 @@ const SliderFour = () => {
           <SwiperSlide>
             <div className=" flex items-center justify-center">
               <Image
-                src={"/slider/slide2.jpg"}
-                className="rounded-lg object-cover"
+                src="/slider/slide2.jpg"
                 width={1320}
                 height={310}
                 alt="slides"
+                className="w-full h-auto rounded-lg object-cover"
               />
             </div>
           </SwiperSlide>
@@ -53,11 +53,11 @@ const SliderFour = () => {
           <SwiperSlide>
             <div className=" flex items-center justify-center">
               <Image
-                src={"/slider/slide3.jpg"}
-                className="rounded-lg object-cover"
+                src="/slider/slide3.jpg"
                 width={1320}
                 height={310}
                 alt="slides"
+                className="w-full h-auto rounded-lg object-cover"
               />
             </div>
           </SwiperSlide>
