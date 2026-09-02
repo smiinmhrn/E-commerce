@@ -1,19 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Logo = ({ onMouseEnter, onMouseLeave }) => {
+const Logo = () => {
   return (
     <Link
       href="/"
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
       className="
         logo
         relative
         z-30
         block
-        w-full
-        h-full
         rounded-lg
         bg-white
         text-center
