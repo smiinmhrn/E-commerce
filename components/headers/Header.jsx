@@ -1,7 +1,12 @@
-import Image from "next/image";
-import Link from "next/link";
+"use client";
+
+import Social from "./Social";
+import Logo from "./Logo";
+import { useState } from "react";
 
 const Header = () => {
+  const [logoHover, setLogoHover] = useState(0);
+
   return (
     <header
       className="container"
@@ -11,24 +16,14 @@ const Header = () => {
       }}
     >
       <div className="flex justify-between items-center">
-        <Link
-          href="/"
-          className="logo rounded-lg shadow-[0px_1px_10px_rgba(0,0,0,0.25)] text-center
-          transition-all duration-500 hover:shadow-[0px_1px_10px_rgba(0,0,0,0.5)]"
-          style={{
-            padding: "1rem",
-          }}
-        >
-          <Image
-            src="/logo/logo.png"
-            className="rounded-lg object-cover"
-            width={100}
-            height={100}
-            alt="logo"
+        <div className="relative">
+          <Logo
+            onMouseEnter={() => setLogoHover(1)}
+            onMouseLeave={() => setLogoHover(0)}
           />
 
-          <div>فروشگاه من</div>
-        </Link>
+          <Social logoHover={logoHover} />
+        </div>
       </div>
     </header>
   );
