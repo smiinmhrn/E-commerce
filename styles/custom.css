@@ -1,0 +1,14 @@
+.sliderContainer {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+}
+
+.sliderContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.sliderItem {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
