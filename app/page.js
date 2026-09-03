@@ -1,4 +1,5 @@
-import BoxSlider from "@/components/BoxSlider/BoxSlider";
+import Banners from "@/components/banners/Banners";
+import BoxSlider from "@/components/boxSlider/BoxSlider";
 import Header from "@/components/headers/Header";
 import Swiper from "@/components/swiper/Swiper";
 
@@ -14,6 +15,7 @@ export default function Home() {
           title={"عنوان محصول"}
           header={"اپلیکیشن ها"}
         />
+        <Banners />
         <BoxSlider
           imgurl={"/bookslider/ganj.jpg"}
           title={"عنوان محصول"}

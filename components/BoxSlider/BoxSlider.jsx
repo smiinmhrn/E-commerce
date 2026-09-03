@@ -1,6 +1,6 @@
 "use client";
 
-import Box from "@/components/BoxSlider/Box";
+import Box from "@/components/boxSlider/Box";
 
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
@@ -8,7 +8,7 @@ import { FaChevronLeft } from "react-icons/fa";
 import { useRef } from "react";
 import Link from "next/link";
 
-const BoxSlider = ({imgurl, title, header}) => {
+const BoxSlider = ({ imgurl, title, header }) => {
   const carouselRef = useRef();
   const carouselSwitcher = (data) => {
     if (carouselRef.current) {
@@ -41,14 +41,19 @@ const BoxSlider = ({imgurl, title, header}) => {
             className=" cursor-pointer bg-zinc-200 transition-all duration-300 hover:bg-orange-400 w-10 h-10 p-2 rounded"
           />
 
-          <Link href={"/shop"} className="bg-orange-500 px-4 py-2 rounded-md transition-all duration-500 hover:bg-orange-600 text-white!">مشاهده ی همه</Link>
+          <Link
+            href={"/shop"}
+            className="bg-orange-500 px-4 py-2 rounded-md transition-all duration-500 hover:bg-orange-600 text-white!"
+          >
+            مشاهده ی همه
+          </Link>
         </div>
       </header>
       <div ref={carouselRef} className="sliderContainer w-full">
         <div className="flex items-center gap-4 mt-10 w-max mx-2">
           {Array.from({ length: 16 }).map((_, index) => (
             <Link href="/shop" key={index}>
-              <Box imgurl={imgurl} title={title}/>
+              <Box imgurl={imgurl} title={title} />
             </Link>
           ))}
         </div>
