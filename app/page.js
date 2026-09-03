@@ -5,7 +5,7 @@ import GraphicalBox from "@/components/graphical/GraphicalBox";
 import GraphicalSlider from "@/components/graphical/GraphicalSlider";
 import Header from "@/components/headers/Header";
 import Swiper from "@/components/swiper/Swiper";
-import WebNewsCard from "@/components/weblognews/WebNewsCard";
+import WebNews from "@/components/weblognews/WebNews";
 
 export default function Home() {
   return (
@@ -29,7 +29,7 @@ export default function Home() {
         <Categories />
         <GraphicalSlider header={"فایل های گرافیکی"} />
 
-        <WebNewsCard />
+        <WebNews />
       </main>
     </>
   );
