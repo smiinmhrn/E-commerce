@@ -1,26 +1,27 @@
 import Image from "next/image";
 import { RiShoppingBag4Fill } from "react-icons/ri";
-import Link from "next/link";
 import { FaRegBookmark } from "react-icons/fa";
 
 import { BiSearchAlt } from "react-icons/bi";
 
-const Box = () => {
+const Box = ({imgurl, title}) => {
   return (
-    <div className="pt-2 hover:pt-0 transition-all duration-300">
-      <article className="sliderItem relative h-90 w-72 m-2 rounded-lg shadow-[0px_1px_10px_rgba(0,0,0,0.25)] transition-all duration-300 hover:shadow-[0px_1px_8px_rgba(0,0,0,0.5)] ">
+    <article className="pt-2 hover:pt-0 transition-all duration-300">
+      <div className="sliderItem relative h-90 w-72 m-2 rounded-lg shadow-[0px_1px_10px_rgba(0,0,0,0.25)] transition-all duration-300 hover:shadow-[0px_1px_8px_rgba(0,0,0,0.5)] bg-white">
         <div>
           <Image
-            src="/boxslider/ganj.jpg"
+            // src="/applicationslider/applications.png"
+            src={imgurl}
             width={288}
             height={160}
             alt="product image"
-            className="object-cover"
+            className="object-cover p-3 rounded-3xl"
           />
         </div>
 
         <div>
-          <h3 className="m-2">عنوان محصول</h3>
+          {/* <h3 className="m-2">عنوان محصول</h3> */}
+          {<h3 className="m-2">{title}</h3>}
           <div className="flex justify-start items-center gap-2 m-2">
             <div
               href={"/"}
@@ -48,8 +49,8 @@ const Box = () => {
             </div>
           </div>
         </div>
-      </article>
-    </div>
+      </div>
+    </article>
   );
 };
 

@@ -8,7 +8,7 @@ import { FaChevronLeft } from "react-icons/fa";
 import { useRef } from "react";
 import Link from "next/link";
 
-const BoxSlider = () => {
+const BoxSlider = ({imgurl, title, header}) => {
   const carouselRef = useRef();
   const carouselSwitcher = (data) => {
     if (carouselRef.current) {
@@ -21,10 +21,10 @@ const BoxSlider = () => {
   };
 
   return (
-    <section className="container mx-auto">
+    <section className="container mx-auto bg-indigo-200 p-5 rounded-2xl">
       <header className=" flex justify-between items-center">
         <h2 className="text-orange-500 text-2xl border-r-orange-400 border-r-2 pr-2">
-         اپلیکیشن ها
+          {header}
         </h2>
 
         <div className=" flex items-center gap-1 text-zinc-800">
@@ -48,7 +48,7 @@ const BoxSlider = () => {
         <div className="flex items-center gap-4 mt-10 w-max mx-2">
           {Array.from({ length: 16 }).map((_, index) => (
             <Link href="/shop" key={index}>
-              <Box />
+              <Box imgurl={imgurl} title={title}/>
             </Link>
           ))}
         </div>

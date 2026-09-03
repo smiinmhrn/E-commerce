@@ -9,7 +9,16 @@ export default function Home() {
 
       <main>
         <Swiper />
-        <BoxSlider />
+        <BoxSlider
+          imgurl={"/applicationslider/applications.png"}
+          title={"عنوان محصول"}
+          header={"اپلیکیشن ها"}
+        />
+        <BoxSlider
+          imgurl={"/bookslider/ganj.jpg"}
+          title={"عنوان محصول"}
+          header={"کتاب ها"}
+        />
       </main>
     </>
   );
