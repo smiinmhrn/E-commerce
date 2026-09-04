@@ -9,7 +9,7 @@ const SideBar = () => {
       <Input />
       <Summery />
       <MostViewd />
-      <MostViewdProducts/>
+      <MostViewdProducts />
     </div>
   );
 };
