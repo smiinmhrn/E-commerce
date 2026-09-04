@@ -1,7 +1,7 @@
 import WebNewsCard from "./WebNewsCard";
 import Link from "next/link";
 
-const WebNews = ({ showHeader = true, showMargin = true }) => {
+const WebNews = ({ showHeader = true, showMargin = true, cardCount = 4 }) => {
   return (
     <div className="flex flex-col container mx-auto mt-10">
       {showHeader && (
@@ -26,10 +26,9 @@ const WebNews = ({ showHeader = true, showMargin = true }) => {
           showMargin ? "mt-10" : ""
         }`}
       >
-        <WebNewsCard />
-        <WebNewsCard />
-        <WebNewsCard />
-        <WebNewsCard />
+        {Array.from({ length: cardCount }).map((_, index) => (
+          <WebNewsCard key={index} />
+        ))}
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ const SingleBlogPage = () => {
           src={"/news/hacker.png"}
           className="rounded-xl"
           priority={true}
-          width={900}
+          width={800}
           height={400}
           alt={"product picture"}
         />
@@ -85,7 +85,7 @@ const SingleBlogPage = () => {
 
         <section>
           <h2 className="text-2xl font-bold">مقالات مرتبط</h2>
-          <WebNews showHeader={false} showMargin={false} />
+          <WebNews showHeader={false} showMargin={false} cardCount={3} />
         </section>
 
         <Comments />
