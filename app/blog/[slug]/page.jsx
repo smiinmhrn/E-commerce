@@ -1,7 +1,9 @@
+import BreadCrump from "@/components/breadCrump/BreadCrump";
+
 const SingleBlogPage = () => {
     return (
         <div>
-            single blog page
+            <BreadCrump secondTitle={"وبلاگ"} secondLink={"/blog"} title={"تایتل مقاله"}/>
         </div>
     );
 }
