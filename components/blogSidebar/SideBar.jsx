@@ -1,4 +1,4 @@
-import Input from "@/components/sidebar/Input";
+import Input from "@/components/blogSidebar/Input";
 import Summery from "./Summery";
 import MostViewd from "./MostViewd";
 import MostViewdProducts from "./MostViewdProducts";

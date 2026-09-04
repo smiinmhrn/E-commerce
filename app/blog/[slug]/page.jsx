@@ -22,7 +22,7 @@ const SingleBlogPage = () => {
           priority={true}
           width={800}
           height={400}
-          alt={"product picture"}
+          alt={"product picture"} 
         />
       </section>
 

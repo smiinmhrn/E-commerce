@@ -1,4 +1,4 @@
-import SideBar from "@/components/sidebar/SideBar";
+import SideBar from "@/components/blogSidebar/SideBar";
 
 const SingleBlogPageLayout = ({ children }) => {
   return (
