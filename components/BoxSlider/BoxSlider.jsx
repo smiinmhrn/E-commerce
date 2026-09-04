@@ -32,13 +32,13 @@ const BoxSlider = ({ imgurl, title, header }) => {
             onClick={() => {
               carouselSwitcher(1);
             }}
-            className=" cursor-pointer bg-zinc-200 transition-all duration-300 hover:bg-orange-400 w-10 h-10 p-2 rounded"
+            className=" cursor-pointer  bg-white! transition-all duration-300 hover:bg-orange-400 w-10 h-10 p-2 rounded"
           />
           <FaChevronLeft
             onClick={() => {
               carouselSwitcher(-1);
             }}
-            className=" cursor-pointer bg-zinc-200 transition-all duration-300 hover:bg-orange-400 w-10 h-10 p-2 rounded"
+            className=" cursor-pointer  bg-white! transition-all duration-300 hover:bg-orange-400 w-10 h-10 p-2 rounded"
           />
 
           <Link

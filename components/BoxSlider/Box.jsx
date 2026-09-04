@@ -21,7 +21,7 @@ const Box = ({imgurl, title}) => {
 
         <div>
           {/* <h3 className="m-2">عنوان محصول</h3> */}
-          {<h3 className="m-2">{title}</h3>}
+          {<h3 className="m-2 line-clamp-1">{title}</h3>}
           <div className="flex justify-start items-center gap-2 m-2">
             <div
               href={"/"}

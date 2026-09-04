@@ -24,7 +24,7 @@ const GraphicalBox = ({ imgurl, title }) => {
         <div>
           {/* <h3 className="m-2">عنوان محصول</h3> */}
           {
-            <h3 className="font-bold text-sm sm:text-base truncate px-4 mb-3">
+            <h3 className="font-bold text-sm sm:text-base truncate px-4 mb-3 line-clamp-1">
               {title}
             </h3>
           }
