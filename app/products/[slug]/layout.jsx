@@ -1,4 +1,4 @@
-import SideBar from "@/components/sidebar/SideBar";
+import SideBar from "@/components/productSidebar/SideBar";
 
 const SingleProductPageLayout = ({ children }) => {
   return (
@@ -6,7 +6,7 @@ const SingleProductPageLayout = ({ children }) => {
       <main className="w-[75%] p-5">{children}</main>
 
       <aside className="w-[25%]">
-        {/* <SideBar /> */}
+        <SideBar />
       </aside>
     </div>
   );
