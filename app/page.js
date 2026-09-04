@@ -6,7 +6,7 @@ import GraphicalSlider from "@/components/graphical/GraphicalSlider";
 import Header from "@/components/headers/Header";
 import Swiper from "@/components/swiper/Swiper";
 import WebNews from "@/components/weblognews/WebNews";
-
+import Footer from "@/components/footer/Footer";
 export default function Home() {
   return (
     <>
@@ -30,6 +30,8 @@ export default function Home() {
         <GraphicalSlider header={"فایل های گرافیکی"} />
 
         <WebNews />
+
+        <Footer/>
       </main>
     </>
   );
