@@ -7,7 +7,8 @@ import { FaFileDownload } from "react-icons/fa";
 import GraphicalBox from "@/components/graphical/GraphicalBox";
 import Box from "@/components/boxSlider/Box";
 
-const SingleProductPage = () => {
+const SingleProductPage = async () => {
+  await new Promise((resolve) => setTimeout(resolve, 500));
   return (
     <div className="flex flex-col gap-8">
       <BreadCrump
