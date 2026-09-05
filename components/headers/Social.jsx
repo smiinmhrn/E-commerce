@@ -16,12 +16,7 @@ const Social = ({ logoHover }) => {
     <div
       onMouseEnter={() => setHover(1)}
       onMouseLeave={() => setHover(0)}
-      className={`flex justify-around items-center absolute left-0 right-0 z-20 transition-all duration-500
-        ${isVisible ? "top-full" : "top-[70%]"}
-      `}
-      style={{
-        padding: "0.5rem",
-      }}
+      className={`flex justify-around items-center transition-all duration-500 md:absolute md:left-0 md:right-0 md:z-20 ${isVisible ? "md:top-full" : "md:top-[70%]"} static w-full md:w-auto md:p-2`}
     >
       <Link href="https://google.com" target="_blank" rel="noopener noreferrer">
         <FaTelegram className="text-indigo-500 transition-colors duration-300 hover:text-orange-500 text-[1.5rem]" />

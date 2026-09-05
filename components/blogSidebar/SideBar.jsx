@@ -1,7 +1,7 @@
 import Input from "@/components/blogSidebar/Input";
-import Summery from "./Summery";
-import MostViewd from "./MostViewd";
-import MostViewdProducts from "./MostViewdProducts";
+import Summery from "@/components/blogSidebar/Summery";
+import MostViewd from "@/components/blogSidebar/MostViewd";
+import MostViewdProducts from "@/components/blogSidebar/MostViewdProducts";
 
 const SideBar = () => {
   return (

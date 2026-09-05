@@ -3,13 +3,13 @@ import { LiaAngleLeftSolid } from "react-icons/lia";
 
 const SiteInfo = () => {
   return (
-    <div className="flex justify-center items-start gap-20">
+    <div className="flex flex-col sm:flex-row justify-center items-center gap-10 sm:gap-16 lg:gap-20 w-full lg:w-auto p-6 sm:p-8 lg:p-0">
       {/* دسترسی سریع */}
-      <div className="flex flex-col items-start text-zinc-700 gap-8">
-        <div className="text-lg">دسترسی سریع</div>
+      <div className="flex flex-col items-start text-zinc-700 gap-6 sm:gap-8">
+        <div className="text-lg font-medium">دسترسی سریع</div>
 
         <ul className="w-full space-y-2">
-          <li className="text-zinc-500  hover:text-sky-400">
+          <li className="text-zinc-500 hover:text-sky-400">
             <Link
               href="/"
               className="flex items-center justify-start transition-all duration-300 hover:-translate-x-2"
@@ -19,7 +19,7 @@ const SiteInfo = () => {
             </Link>
           </li>
 
-          <li className="text-zinc-500  hover:text-sky-400">
+          <li className="text-zinc-500 hover:text-sky-400">
             <Link
               href="/"
               className="flex items-center justify-start transition-all duration-300 hover:-translate-x-2"
@@ -29,7 +29,7 @@ const SiteInfo = () => {
             </Link>
           </li>
 
-          <li className="text-zinc-500  hover:text-sky-400">
+          <li className="text-zinc-500 hover:text-sky-400">
             <Link
               href="/"
               className="flex items-center justify-start transition-all duration-300 hover:-translate-x-2"
@@ -39,7 +39,7 @@ const SiteInfo = () => {
             </Link>
           </li>
 
-          <li className="text-zinc-500  hover:text-sky-400">
+          <li className="text-zinc-500 hover:text-sky-400">
             <Link
               href="/"
               className="flex items-center justify-start transition-all duration-300 hover:-translate-x-2"
@@ -52,11 +52,11 @@ const SiteInfo = () => {
       </div>
 
       {/* راهنمای خرید */}
-      <div className="flex flex-col items-start text-zinc-700 gap-8">
-        <div className="text-lg">راهنمای خرید</div>
+      <div className="flex flex-col items-start text-zinc-700 gap-6 sm:gap-8">
+        <div className="text-lg font-medium">راهنمای خرید</div>
 
         <ul className="w-full space-y-2">
-          <li className="text-zinc-500  hover:text-sky-400">
+          <li className="text-zinc-500 hover:text-sky-400">
             <Link
               href="/"
               className="flex items-center justify-start transition-all duration-300 hover:-translate-x-2"
@@ -66,17 +66,17 @@ const SiteInfo = () => {
             </Link>
           </li>
 
-          <li className="text-zinc-500  hover:text-sky-400">
+          <li className="text-zinc-500 hover:text-sky-400">
             <Link
               href="/"
-              className="flex items-center justify-start transition-all duration-300  hover:-translate-x-2"
+              className="flex items-center justify-start transition-all duration-300 hover:-translate-x-2"
             >
               <LiaAngleLeftSolid />
               <span>چگونه خرید کنیم؟</span>
             </Link>
           </li>
 
-          <li className="text-zinc-500  hover:text-sky-400">
+          <li className="text-zinc-500 hover:text-sky-400">
             <Link
               href="/"
               className="flex items-center justify-start transition-all duration-300 hover:-translate-x-2"

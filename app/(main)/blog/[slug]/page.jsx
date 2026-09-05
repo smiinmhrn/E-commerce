@@ -2,56 +2,61 @@ import BreadCrump from "@/components/breadCrump/BreadCrump";
 import Comments from "@/components/comments/Comments";
 import WebNews from "@/components/weblognews/WebNews";
 import Image from "next/image";
-import { FaRegEye } from "react-icons/fa";
-import { FaComment } from "react-icons/fa";
+import { FaRegEye, FaComment } from "react-icons/fa";
 import { MdDateRange } from "react-icons/md";
 
 const SingleBlogPage = () => {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-6 sm:gap-8">
+      {/* Breadcrumb */}
       <BreadCrump
         secondTitle={"وبلاگ"}
         secondLink={"/blog"}
         title={"تایتل مقاله"}
       />
 
-      <section className="flex justify-center items-center">
+      <section className="flex justify-center items-center w-full">
         <Image
-          src={"/news/hacker.png"}
-          className="rounded-xl"
-          priority={true}
+          src="/news/hacker.png"
+          className="rounded-xl object-cover w-full max-w-[800px] h-auto"
+          priority
           width={800}
           height={400}
-          alt={"product picture"} 
+          alt="blog picture"
         />
       </section>
 
-      <section className="flex flex-col items-start gap-5">
-        <section className="text-blue-500 text-right">
+      <section className="flex flex-col items-start gap-4 sm:gap-5 w-full">
+        {/* Short Description */}
+        <section className="text-blue-500 text-right text-sm sm:text-base leading-7 sm:leading-8 w-full">
           امروز یک توسعه‌دهنده تصمیم گرفت کدهایش را مرتب کند و بالاخره پروژه
           بدون هیچ خطایی اجرا شد.
         </section>
 
-        <section className="flex justify-start items-center gap-3">
-          <div className="flex justify-center items-center gap-2 bg-zinc-200 p-2 px-4 rounded-2xl">
+        <section className="flex flex-wrap justify-start items-center gap-2 sm:gap-3 w-full">
+          {/* Views */}
+          <div className="flex justify-center items-center gap-2 bg-zinc-200 p-2 px-3 sm:px-4 rounded-2xl text-sm sm:text-base">
             <FaRegEye />
             <p>تعداد بازدید: 5</p>
           </div>
 
-          <div className="flex justify-center items-center gap-2  bg-zinc-200 p-2 px-4 rounded-2xl">
+          {/* Comments */}
+          <div className="flex justify-center items-center gap-2 bg-zinc-200 p-2 px-3 sm:px-4 rounded-2xl text-sm sm:text-base">
             <FaComment />
             <p>تعداد دیدگاه: 5</p>
           </div>
 
-          <div className="flex justify-center items-center gap-2  bg-zinc-200 p-2 px-4 rounded-2xl">
+          {/* Date */}
+          <div className="flex justify-center items-center gap-2 bg-zinc-200 p-2 px-3 sm:px-4 rounded-2xl text-sm sm:text-base">
             <MdDateRange />
             <p>تاریخ انتشار: 1405/2/3</p>
           </div>
         </section>
 
-        <section className="flex flex-col gap-5 my-5">
-          <h2 className="text-2xl font-bold">توضیحات کامل</h2>
-          <p className="text-justify leading-8 text-zinc-600">
+        <section className="flex flex-col gap-4 sm:gap-5 my-3 sm:my-5 w-full">
+          <h2 className="text-xl sm:text-2xl font-bold">توضیحات کامل</h2>
+
+          <p className="text-justify leading-7 sm:leading-8 text-sm sm:text-base text-zinc-600">
             در دنیای امروز، فناوری تقریباً در تمام بخش‌های زندگی انسان حضور دارد
             و بسیاری از کارهایی که در گذشته به زمان و انرژی زیادی نیاز داشتند،
             امروزه تنها با چند کلیک انجام می‌شوند. از خرید اینترنتی و آموزش
@@ -83,8 +88,11 @@ const SingleBlogPage = () => {
           </p>
         </section>
 
-        <section>
-          <h2 className="text-2xl font-bold">مقالات مرتبط</h2>
+        <section className="w-full">
+          <h2 className="text-xl sm:text-2xl font-bold mb-5 sm:mb-6">
+            مقالات مرتبط
+          </h2>
+
           <WebNews showHeader={false} showMargin={false} cardCount={3} />
         </section>
 

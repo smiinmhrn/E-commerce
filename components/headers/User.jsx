@@ -4,21 +4,23 @@ import { FaUser } from "react-icons/fa";
 
 const User = () => {
   return (
-    <div className="flex justify-end gap-7">
+    <div className="flex items-center gap-1.5 sm:gap-2 md:gap-2.5">
       <Link
         href="/login"
-        className="bg-zinc-200 p-2 px-4 rounded-lg flex items-center cursor-pointer hover:bg-zinc-300 transition"
+        className="bg-zinc-200 p-3! sm:p-2 rounded-lg flex items-center justify-center cursor-pointer hover:bg-zinc-300 transition shrink-0"
       >
-        <FaUser className="text-2xl" />
+        <FaUser className="text-lg sm:text-xl md:text-xl" />
       </Link>
 
-      <div className="flex items-center justify-center bg-orange-400 text-white! p-3 gap-4 rounded-lg">
-        <span className="bg-white text-black px-2 rounded-full">0</span>
+      <div className="flex items-center justify-center bg-orange-400 text-white! p-1.5 sm:p-2 md:p-2 gap-1 sm:gap-2 rounded-lg shrink-0">
+        <span className="bg-white text-black text-[10px] sm:text-xs px-1.5 sm:px-2 rounded-full">
+          0
+        </span>
 
-        <p>سبد خرید</p>
+        <p className="hidden md:block text-sm">سبد خرید</p>
 
-        <div className="bg-white p-1 rounded-lg">
-          <MdOutlineShoppingCart className="text-2xl text-orange-500" />
+        <div className="bg-white p-1 rounded-md">
+          <MdOutlineShoppingCart className="text-lg sm:text-xl text-orange-500" />
         </div>
       </div>
     </div>

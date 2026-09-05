@@ -1,7 +1,7 @@
-import Btns from "./Btns";
-import Info from "./Info";
-import Summery from "./Summery";
-import Tags from "./Tags";
+import Btns from "@/components/productSidebar/Btns";
+import Info from "@/components/productSidebar/Info";
+import Summery from "@/components/productSidebar/Summery";
+import Tags from "@/components/productSidebar/Tags";
 
 const SideBar = () => {
   return (
