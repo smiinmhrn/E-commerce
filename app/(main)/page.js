@@ -1,5 +1,5 @@
 import Banners from "@/components/banners/Banners";
-import BoxSlider from "@/components/boxSlider/BoxSlider";
+import BoxSlider from "@/components/boxslider/BoxSlider";
 import Categories from "@/components/categories/Categories";
 import GraphicalSlider from "@/components/graphical/GraphicalSlider";
 import Swiper from "@/components/swiper/Swiper";

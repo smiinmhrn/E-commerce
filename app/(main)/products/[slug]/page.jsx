@@ -5,7 +5,7 @@ import { MdOutlineModeEdit } from "react-icons/md";
 import { RxDimensions } from "react-icons/rx";
 import { FaFileDownload } from "react-icons/fa";
 import GraphicalBox from "@/components/graphical/GraphicalBox";
-import Box from "@/components/boxSlider/Box";
+import Box from "@/components/boxslider/Box";
 
 const SingleProductPage = async () => {
   // await new Promise((resolve) => setTimeout(resolve, 1000));

@@ -1,6 +1,6 @@
 "use client";
 
-import Box from "@/components/boxSlider/Box";
+import Box from "@/components/boxslider/Box";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import { useRef } from "react";
 import Link from "next/link";
