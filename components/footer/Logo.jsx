@@ -8,7 +8,7 @@ const Logo = () => {
       className="flex flex-col justify-center items-center text-center w-full lg:w-[30%] p-6 sm:p-8 lg:p-15"
     >
       <Image
-        src="/logo/logo.png"
+        src="/logo/images.jpg"
         width={150}
         height={150}
         alt="logo"

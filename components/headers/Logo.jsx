@@ -8,7 +8,7 @@ const Logo = () => {
       className="p-1.5 sm:p-2 lg:p-3 xl:p-4 logo relative z-30 block rounded-lg bg-white text-center text-[10px] sm:text-xs lg:text-sm xl:text-base shadow-[0px_1px_10px_rgba(0,0,0,0.25)] transition-all duration-500 hover:shadow-[0px_1px_10px_rgba(0,0,0,0.5)]"
     >
       <Image
-        src="/logo/logo.png"
+        src="/logo/images.jpg"
         width={100}
         height={100}
         alt="logo"
