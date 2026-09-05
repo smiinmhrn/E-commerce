@@ -9,7 +9,6 @@ This is a sample e-commerce website built with **Next.js** and **Tailwind CSS**,
 * Static routes
 * Dynamic routes and dynamic product pages using slugs
 * Route groups
-* Pagination
 * Not Found pages
 * Error handling
 * Loading states
