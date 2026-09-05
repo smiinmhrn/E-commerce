@@ -8,7 +8,7 @@ import GraphicalBox from "@/components/graphical/GraphicalBox";
 import Box from "@/components/boxSlider/Box";
 
 const SingleProductPage = async () => {
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  // await new Promise((resolve) => setTimeout(resolve, 1000));
 
   return (
     <div className="flex flex-col gap-6 sm:gap-8">
