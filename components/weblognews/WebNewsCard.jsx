@@ -5,7 +5,7 @@ const WebNewsCard = ({ slug = "spam-comments" }) => {
   return (
     <Link href={`/blog/${slug}`} className="block">
       <article className="pt-2 hover:pt-0 transition-all duration-300 cursor-pointer">
-        <div className="relative sliderItem w-full h-[25rem] sm:h-[26rem] md:h-[27rem] rounded-lg shadow-[0px_1px_10px_rgba(0,0,0,0.25)] transition-all duration-300 hover:shadow-[0px_1px_8px_rgba(0,0,0,0.5)] bg-white overflow-hidden">
+        <div className="relative sliderItem w-full h-100 sm:h-104 md:h-108 rounded-lg shadow-[0px_1px_10px_rgba(0,0,0,0.25)] transition-all duration-300 hover:shadow-[0px_1px_8px_rgba(0,0,0,0.5)] bg-white overflow-hidden">
           <div className="w-full">
             <Image
               src="/news/hacker.png"

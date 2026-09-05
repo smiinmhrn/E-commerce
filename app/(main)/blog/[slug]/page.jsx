@@ -18,7 +18,7 @@ const SingleBlogPage = () => {
       <section className="flex justify-center items-center w-full">
         <Image
           src="/news/hacker.png"
-          className="rounded-xl object-cover w-full max-w-[800px] h-auto"
+          className="rounded-xl object-cover w-full max-w-200 h-auto"
           priority
           width={800}
           height={400}

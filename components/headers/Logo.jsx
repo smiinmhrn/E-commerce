@@ -12,7 +12,7 @@ const Logo = () => {
         width={100}
         height={100}
         alt="logo"
-        className="rounded-lg object-cover w-12 h-12 sm:w-14 sm:h-14 lg:w-20 lg:h-20 xl:w-[100px] xl:h-[100px]"
+        className="rounded-lg object-cover w-12 h-12 sm:w-14 sm:h-14 lg:w-20 lg:h-20 xl:w-25 xl:h-25"
       />
       <div className="mt-1 sm:mt-1.5 lg:mt-2">فروشگاه من</div>
     </Link>

@@ -42,7 +42,7 @@ const Header = () => {
       </div>
 
       <div
-        className={`2xl:hidden overflow-hidden transition-all duration-500 ${menuOpen ? "max-h-[1000px] opacity-100 mt-4" : "max-h-0 opacity-0 mt-0"}`}
+        className={`2xl:hidden overflow-hidden transition-all duration-500 ${menuOpen ? "max-h-250 opacity-100 mt-4" : "max-h-0 opacity-0 mt-0"}`}
       >
         <div className="flex flex-col gap-5 sm:gap-6 bg-white rounded-2xl p-3 sm:p-5 shadow-[0px_2px_15px_rgba(0,0,0,0.12)]">
           <Navbar mobile onClose={() => setMenuOpen(false)} />

@@ -22,7 +22,7 @@ const SingleProductPage = async () => {
         <div className="w-full lg:w-auto flex justify-center">
           <Image
             src="/bookslider/ganj.jpg"
-            className="rounded-xl object-cover w-full max-w-[600px] h-auto"
+            className="rounded-xl object-cover w-full max-w-150 h-auto"
             priority
             width={600}
             height={400}

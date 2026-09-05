@@ -12,7 +12,7 @@ const Logo = () => {
         width={150}
         height={150}
         alt="logo"
-        className="w-28 h-28 sm:w-32 sm:h-32 lg:w-[150px] lg:h-[150px] rounded-lg object-cover"
+        className="w-28 h-28 sm:w-32 sm:h-32 lg:w-37.5 lg:h-37.5 rounded-lg object-cover"
       />
 
       <p className="text-zinc-600 p-3 text-center text-sm sm:text-base leading-7 max-w-md">

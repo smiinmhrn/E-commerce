@@ -8,7 +8,7 @@ const SiteLicens = () => {
         width={150}
         height={150}
         alt="license"
-        className="w-24 h-24 sm:w-28 sm:h-28 lg:w-[150px] lg:h-[150px] rounded-lg object-cover"
+        className="w-24 h-24 sm:w-28 sm:h-28 lg:w-37.5 lg:h-37.5 rounded-lg object-cover"
       />
 
       <Image
@@ -16,7 +16,7 @@ const SiteLicens = () => {
         width={150}
         height={150}
         alt="license"
-        className="w-24 h-24 sm:w-28 sm:h-28 lg:w-[150px] lg:h-[150px] rounded-lg object-cover"
+        className="w-24 h-24 sm:w-28 sm:h-28 lg:w-37.5 lg:h-37.5 rounded-lg object-cover"
       />
     </div>
   );
